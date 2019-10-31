@@ -1,0 +1,20 @@
+# lancer prog compilé : 
+java -cp target/mon-appli-1.0-SNAPSHOT.jar org.exemple.demo.App
+
+# description projet : 
+Un projet Maven est identifié par ses coordonnées : groupId:artifactId:version
+Dans mon exemple, les coordonnées du projet sont donc org.exemple.demo:mon-appli:1.0-SNAPSHOT.
+
+# properties
+<properties>
+	<log4j.version>2.11.3</log4j.version>
+	...
+
+<depedencies>
+	<depedencie>
+	...
+	<version>${log4j.version}</version>
+
+# pom.xml
+# voir le super pom
+mvn help:effective-pom

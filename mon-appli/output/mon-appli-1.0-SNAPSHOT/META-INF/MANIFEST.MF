@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.2
+Built-By: lourdel
+Build-Jdk: 11.0.4
+Main-Class: org.exemple.demo.App
+
