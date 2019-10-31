@@ -18,3 +18,60 @@ Dans mon exemple, les coordonnées du projet sont donc org.exemple.demo:mon-appl
 # pom.xml
 # voir le super pom
 mvn help:effective-pom
+
+_____# les ressources 
+
+<project>
+    ...
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources/filtered</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources/raw</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+    ...
+</project>
+
+______# les profils :
+# Pour construire un livrable pour l'environnement de test :
+mvn package -P test
+
+# Pour construire un livrable pour l'environnement de production :
+mvn package -P prod
+<project>
+    ...
+    <!-- =============================================================== -->
+    <!-- Profils -->
+    <!-- =============================================================== -->
+    <profiles>
+        <!-- Profil pour l'environnement de test -->
+        <profile>
+            <id>test</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources/conf-test</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+        <!-- Profil pour l'environnement de production -->
+        <profile>
+            <id>prod</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources/conf-prod</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+    </profiles>
+    ...
+</project>
