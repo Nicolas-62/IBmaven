@@ -10,8 +10,10 @@ public class Log {
 
     public static void go( )
     {
-        logger.error("tu t'es trompé dans Log !");
-        logger.debug("tu t'es trompé dans Log !");
+        for(int i=0; i<1000; i++) {
+            logger.error("tu t'es trompé dans Log !");
+            logger.debug("tu t'es trompé dans Log !");
+        }
         System.out.println( "Hello World!" );
     }
 }

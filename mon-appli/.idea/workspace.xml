@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0da2240-a73b-4227-ab82-df2bffe5848a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/Log2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../maven_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../maven_notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollingLogs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mon-appli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mon-appli.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/classes/org/exemple/demo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/classes/org/exemple/demo/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/META-INF/maven/org.exemple.demo/mon-appli/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/META-INF/maven/org.exemple.demo/mon-appli/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/org/exemple/demo/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/surefire-reports/TEST-org.exemple.demo.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/surefire-reports/TEST-org.exemple.demo.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/surefire-reports/org.exemple.demo.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/surefire-reports/org.exemple.demo.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/exemple/demo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/exemple/demo/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/exemple/demo/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/exemple/demo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/exemple/demo/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/classes/META-INF/mon-appli.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/classes/org/exemple/demo/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/classes/org/exemple/demo/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/exemple/demo/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +39,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1SxyBTDIWJKkRA5ztyF2dnnEOa9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/eclipse-workspace/eclipse-monespace/ProjetMondeEco" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -124,5 +113,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
