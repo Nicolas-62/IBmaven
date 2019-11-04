@@ -19,7 +19,7 @@ Dans mon exemple, les coordonnées du projet sont donc org.exemple.demo:mon-appl
 # voir le super pom
 mvn help:effective-pom
 
-_____# les ressources 
+---------------------------------------# les ressources  ---------------------------------------
 
 <project>
     ...
@@ -38,7 +38,8 @@ _____# les ressources
     ...
 </project>
 
-______# les profils :
+---------------------------------------# les profils : ----------------------------------------------
+
 # Pour construire un livrable pour l'environnement de test :
 mvn package -P test
 
@@ -75,3 +76,116 @@ mvn package -P prod
     </profiles>
     ...
 </project>
+
+--------------------------------------- manifest ----------------------------------------------------
+Rappel : 
+# lancer prog compilé : 
+java -cp target/mon-appli-1.0-SNAPSHOT.jar org.exemple.demo.App
+
+Avec le manifest :
+java -jar target/mon-appli-1.0-SNAPSHOT.jar
+
+<project>
+    ...
+    <!-- =============================================================== -->
+    <!-- Build -->
+    <!-- =============================================================== -->
+    <build>
+        <!-- Gestion des plugins (version) -->
+        <pluginManagement>
+            <plugins>
+                <!-- Plugin responsable de la génération du fichier JAR -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <!-- Création du Manifest pour la définition de la classe Main -->
+                        <manifest>
+                            <mainClass>org.exemple.demo.App</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    ...
+</project>
+--------------------------------------- build ----------------------------------------------------
+
+<project>
+    ...
+    <!-- =============================================================== -->
+    <!-- Build -->
+    <!-- =============================================================== -->
+    <build>
+        <directory>${project.basedir}/output</directory>
+    </build>
+    ...
+</project>
+
+--------------------------------------- package ----------------------------------------------------
+mvn package :
+
+    copié les ressources de l'application (j'y reviendrai plus tard)
+
+    compilé les sources de l'application
+
+    compilé les sources des tests
+
+    exécuté les tests sur l'application (1 test exécuté, aucune erreur)
+
+    généré un JAR de l'application
+
+--------------------------------------- dependances ----------------------------------------------------
+
+ignorer des sous dépenances :
+        <dependency>
+...
+            <exclusions>
+                <!-- La dépendance vers commons-lang3 est exclue -->
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-lang3</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+portée des dépendances :
+
+scope : 
+
+
+--------------------------------------- cycle de vie ----------------------------------------------------
+
+mvn <commande> (cycle default) :
+
+    validate : vérifie que la configuration projet est correcte (POM, pas d'éléments manquants...)
+
+    compile : compile les sources du projet
+
+    test : teste le code compilé avec les classes de tests unitaires contenues dans le projet
+
+    package : package les éléments issus de la compilation dans un format distribuable (JAR, WAR...)
+
+    install : installe le package dans votre repository local
+
+    deploy : envoie le package dans le repository distant défini dans le POM
+
+
+ex : mvn <package> = validate + compile + package
+     mvn <install> = validate + compile + package + install
+
+mvn clean package (cycle clean d'abord) : 
+
+clean : qui permet de nettoyer le projet en supprimant les éléments issus de la construction de celui-ci
+
+site : qui permet de créer un site web pour le projet

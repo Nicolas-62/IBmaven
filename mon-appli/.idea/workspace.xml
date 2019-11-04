@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0da2240-a73b-4227-ab82-df2bffe5848a" name="Default Changelist" comment="" />
+    <list default="true" id="b0da2240-a73b-4227-ab82-df2bffe5848a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/Log2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../maven_notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mon-appli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mon-appli.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/classes/org/exemple/demo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/output/classes/org/exemple/demo/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/META-INF/maven/org.exemple.demo/mon-appli/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/META-INF/maven/org.exemple.demo/mon-appli/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/mon-appli-1.0-SNAPSHOT/org/exemple/demo/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/surefire-reports/TEST-org.exemple.demo.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/surefire-reports/TEST-org.exemple.demo.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/surefire-reports/org.exemple.demo.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/surefire-reports/org.exemple.demo.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/exemple/demo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/exemple/demo/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/exemple/demo/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/exemple/demo/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/exemple/demo/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/exemple/demo/App.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -15,12 +45,27 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/org/exemple/demo/App.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1SxyBTDIWJKkRA5ztyF2dnnEOa9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/eclipse-workspace/eclipse-monespace/ProjetMondeEco" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,6 +78,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.exemple.demo.App" />
+      <module name="mon-appli" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.exemple.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,7 +117,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
